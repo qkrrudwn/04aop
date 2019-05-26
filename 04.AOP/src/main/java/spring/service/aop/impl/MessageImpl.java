@@ -4,7 +4,7 @@ import spring.service.aop.Message;
 
 /*
  * FileName : MessageImpl.java
- * :: Message Interface ±¸Çö Bean 
+ * :: Message Interface ï¿½ï¿½ï¿½ï¿½ Bean 
  */
 public class MessageImpl implements Message {
 	
@@ -18,7 +18,7 @@ public class MessageImpl implements Message {
 	///Method
 	public String getMessage() throws Exception {
 		System.out.println("\n:: "+getClass()+".getMessage() start / end ...\n ");
-		return "Hi "+message;
+		return "Hi2 "+message;
 	}
 	
 	public void setMessage(String message) throws Exception {
@@ -27,9 +27,9 @@ public class MessageImpl implements Message {
 		
 		System.out.println("\n:: "+getClass()+".setMessage() start... ");
 		
-		//==> Àü´Þ¹ÞÀº message °¡ null ÀÎ °æ¿ì NullPointerException ¹ß»ý...
+		//==> ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ message ï¿½ï¿½ null ï¿½ï¿½ ï¿½ï¿½ï¿½ NullPointerException ï¿½ß»ï¿½...
 		if(message ==null ){
-			System.out.println(":: NullPointerException ¹ß»ý");
+			System.out.println(":: NullPointerException ï¿½ß»ï¿½");
 			throw new NullPointerException();
 		}
 		
